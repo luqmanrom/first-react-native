@@ -23,7 +23,18 @@ const styles = {
 		fontSize: 28
 	},
 	viewStyle : {
-		backgroundColor: '#f8f8f8'
+		backgroundColor: '#f8f8f8',
+		justifyContent: 'center', // Up and down
+		alignItems: 'center', // Left and right,
+		height: 60,
+		paddingTop: 15,
+		shadowColor: '#000',
+		shadowOffset: { width: 0, height: 2},
+		shadowOpacity: 0.2, 
+
+		// Will be discussed later
+		elevation: 2,
+		position: 'relative'
 	}
 }
 
