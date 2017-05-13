@@ -8,11 +8,19 @@ import { Text } from 'react-native';
 
 const Header = () => {
 
+	const { textStyle } = styles;
+
 	return (
-		<Text> Albums!</Text>
+		<Text style={textStyle}> Albums!</Text>
 	);
 
 };
+
+const styles = {
+	textStyle : {
+		fontSize: 28
+	}
+}
 
 // Export component to make it available on other part of the apps
 
