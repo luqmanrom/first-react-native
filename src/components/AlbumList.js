@@ -8,18 +8,21 @@ import axios from 'axios';
 
 class AlbumList extends Component {
 
+	state = { albums : [] }
+
 	componentWillMount() {
 
 		axios.get('https://rallycoding.herokuapp.com/api/music_albums')
 			.then((response) => {
-				console.log(response)
+
+				this.setState({ albums : response.data }) // The only way to change state. Will rerender the component
 			})
 	}
 
 	render() {
 		return (
 			<View>
-				<Text> Inside album list </Text>
+				<Text> Inside album list { this.state.albums.length} </Text>
 			</View>
 		);
 	}
