@@ -7,10 +7,12 @@ import React from 'react';
 // Import destructuring
 import {
   AppRegistry,
-  Text
+  Text,
+  View
 } from 'react-native'; 
 
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 // Create component
 // Component is a JS function that returns some amount JSX code
@@ -18,7 +20,14 @@ import Header from './src/components/header';
 const App = () => {
 
   return (
-    <Header headerText={'Albums'}/>
+
+    <View> 
+     <Header headerText={'Albums'}/>
+
+        <AlbumList />
+
+    </View>
+   
   );
 };
 
