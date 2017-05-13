@@ -22,7 +22,7 @@ const styles = {
 		borderColor: '#ddd',
 		borderBottomWidth: 0,
 
-		shadowColor: '#0000',
+		shadowColor: '#000',
 		shadowOffset: { width: 0, height: 2},
 		shadowOpacity: 0.1,
 		shadowRadius: 2,
