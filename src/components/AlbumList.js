@@ -2,7 +2,7 @@
 
 // React is required because Babel will convert the JSC into React.createElement components
 import React, { Component } from 'react'; 
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -31,9 +31,9 @@ class AlbumList extends Component {
 
 	render() {
 		return (
-			<View>
+			<ScrollView>
 				{ this.renderAlbums() }
-			</View>
+			</ScrollView>
 		);
 	}
 }
