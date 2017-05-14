@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 
 // @todo Destructring props and styles
@@ -34,6 +35,10 @@ const AlbumDetail = (props) => {
 					source={{ uri : props.album.image }} 
 					style={styles.imageStyle} 
 				/>	
+			</CardSection>
+
+			<CardSection>
+				<Button />
 			</CardSection>
 
 		</Card>
